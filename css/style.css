@@ -1,0 +1,245 @@
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);*/
+
+@font-face{
+font-family: "Roboto", sans-serif;
+src: url("../fonts/Roboto") format("ttf");    
+}
+*{   
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    behavior: url(assets/boxsizing.htc);
+  }
+body{
+    margin: 0;
+    font-family: Roboto, Helvetica,sans-serif;
+}
+/*
+.bkg{
+    background: url(http://www.eneaa.com/templates/zeus/wp-content/themes/zeus/images/grid-patterns/pattern1.png) repeat;
+}
+*/
+.home{
+/*    background-position: center;*/
+    background-image: url(../img/retail_bkg.jpg);
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    display: block;
+    z-index: 2;
+}
+.home:after{
+    content: "";
+/*    background: url(http://www.eneaa.com/templates/zeus/wp-content/themes/zeus/images/grid-patterns/pattern1.png) repeat;*/
+  padding: 2.25em 1.6875em;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -o-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  -ms-background-size: 4px 4px;
+  -o-background-size: 4px 4px;
+  background-size: 4px 4px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+div.content{
+    max-width: 2000px;
+    margin: 0px auto;    
+}
+div#content_logo{
+    width: 12%;
+    position: relative;
+    /* display: block; */
+    height: 166px;
+    max-width: 250px;
+    min-width: 210px;
+    text-align: center;
+}
+div#content_logo img{
+    opacity: 0.6;
+    top: -104px;
+    left: -17px;
+    position: relative;
+    width: 98%;
+}
+div#content_logo img#bbr{
+    opacity: 1;
+    top: 11px;
+    left: 7px;
+    position: absolute;
+    width: 78%;
+    max-width: 202px;
+    min-width: 150px;
+}
+div#content_logo figure#logo figcaption h1{
+    text-indent: 1000px;
+    font-size: 0px;    
+}
+section{
+    width: 100%;
+    display: block;
+    height: 500px;
+    text-align: right;
+    padding: 14% 7% 0% 0%;
+    height: 38%;
+}
+section div#form{
+    display: inline-block;
+    max-width: 350px;
+    height: 380px;
+    background-color: white;
+    width: 30%;
+    min-width: 300px;
+    border: 1px solid #ccc;
+    -ms-border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -o- border-radius: 2%;
+    border-radius: 2%;
+    behavior: url(assets/PIE.htc);
+}
+section div#form div#header_form{
+    display: inline-block;
+    width: 100%;
+    height: 85px;
+    background-color: #FFFFFF;
+    border-radius: 1%;
+    position: relative;
+}
+section div#form div#header_form div#logo_empresa{
+    background-image: url(../img/logo_cliente.jpg);
+    background-repeat: no-repeat, repeat;
+    height: 132%;
+    -moz-border-radius: 67%;
+    -ms-border-radius: 67%;
+    -o-border-radius: 67%;
+    -webkit-border-radius: 67%;
+    border-radius: 67%;
+    behavior: url(assets/PIE.htc);
+    display: inline-block;
+    width: 46%;
+    /* background-color: gray; */
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    position: absolute;
+    background-position: 10px 2px;
+}
+section div#form div#header_form div#bkg_miniatura{
+    width: 70%;
+    background-image: url(../img/bkg_miniatura.jpg);
+    background-repeat: repeat;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    background-position: 57px -3px;  
+}
+section div#form h2{
+    text-align: center;
+    color: #ABABAB;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 1.2em;
+}
+section div#form form a{
+    text-decoration: none;
+}
+section div#form form a h3{
+    text-align: left;
+    color: #ABABAB;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 0.7em;
+}
+section div#form form{
+    padding: 0px 25px 25px 25px;    
+}
+section div#form div#usuario,section div#form div#contrasena{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    text-align: left;
+    padding: 4px;
+    background-color: #F5F5F5;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+section div#form div#usuario span{
+    vertical-align: middle;
+    border-right: 1px solid #CCC;
+    padding: 15px 8px;
+    text-align: left;
+    background-color: #FFFFFF;
+    margin-left: -4px;
+}
+section div#form form div#usuario span img, section div#form div#contrasena span img{
+    width: 24px;
+}
+section div#form form div#usuario input[name=usuario], section div#form div#contrasena input[name=contrasena]{
+    border: none;
+    background-color: #F5F5F5;
+    vertical-align: super;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    width: 82%;
+    height: 30px;
+}   
+section div#form div#contrasena span{
+    vertical-align: middle;
+    border-right: 1px solid #CCC;
+    padding: 15px 8px;
+    text-align: left;
+    background-color: #FFFFFF;
+    /* width: 70%; */
+    /* overflow: auto; */
+    margin-left: -4px;
+}
+section div#form input[name=submit]{
+    background-color: #8abbef;
+    vertical-align: super;
+    width: 100%;
+    padding: 8px;
+    color: #fff;
+    border: 1px solid #8abbef;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    behavior: url(assets/PIE.htc);
+    font-size: 1em;
+}
+/*Estilos validacion formulario*/
+section div#form form div#error_usuario h4, section div#form form div#error_contrasena h4{
+    text-align: center;
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 10px;    
+}
+/*MEDIA QUERIES*/
+@media screen and (max-width: 800px) and (min-width: 100px) {
+    section{
+        text-align: center;
+    }
+    div#content_logo{
+        margin: 0 auto;       
+    }
+}

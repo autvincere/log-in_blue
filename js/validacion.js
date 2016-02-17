@@ -10,7 +10,10 @@ $(document).ready(function () {
             $("div#wrapper_form").effect("shake", {direction: "left", distance:8,times:3},500);
             $("div#error_form").html("<h4>Porfavor llene los campos</h4>");
             return false;
-        };
+        }else{
+            $("div#error_form").remove();
+//            console.log("campos escritos")
+        }
         if (usuario == "" || !expr1.test(usuario)) {
           $("div#wrapper_usuario").effect("shake", {direction: "left", distance:8,times:3},500);
             $("div#error_usuario").html("<h4>error de usuario</h4>");
@@ -24,7 +27,7 @@ $(document).ready(function () {
             return false;
         } else {
             $("div#error_usuario").remove();
-            console.log("usuario correcto")
+//            console.log("usuario correcto")
         };
         if (contrasena == "") {
             $("div#wrapper_contrasena").effect("shake", {direction: "left", distance:8,times:3},500);

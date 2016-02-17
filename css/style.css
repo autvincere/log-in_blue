@@ -93,10 +93,8 @@ div#content_logo figure#logo figcaption h1{
 section{
     width: 100%;
     display: block;
-    height: 500px;
     text-align: right;
-    padding: 150px 7% 0% 0%;
-    height: 38%;
+    padding: 0% 7%;
 }
 section div#wrapper_form div#form{
     display: inline-block;

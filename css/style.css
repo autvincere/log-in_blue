@@ -16,11 +16,7 @@ body{
     margin: 0;
     font-family: Roboto, Helvetica,sans-serif;
 }
-/*
-.bkg{
-    background: url(http://www.eneaa.com/templates/zeus/wp-content/themes/zeus/images/grid-patterns/pattern1.png) repeat;
-}
-*/
+
 .home{
 /*  background-position: center;*/
     background-image: url(../img/retail_bkg.jpg);
@@ -34,29 +30,6 @@ body{
     -ms-behavior: url(../assets/backgroundsize.min.htc);
     height: 100%;
 }
-/*
-.home:after{
-    content: "";
-    background: url(http://www.eneaa.com/templates/zeus/wp-content/themes/zeus/images/grid-patterns/pattern1.png) repeat;
-  padding: 2.25em 1.6875em;
-  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: -o-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  -webkit-background-size: 3px 3px;
-  -moz-background-size: 3px 3px;
-  -ms-background-size: 4px 4px;
-  -o-background-size: 4px 4px;
-  background-size: 4px 4px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-}
-*/
 div.content{
     max-width: 2000px;
     margin: 0px auto;    
